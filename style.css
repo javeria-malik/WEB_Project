@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,600&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.logo img{
+    width:70%;
+    border: solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+   /* background-color: rgb(11, 3, 19);*/
+    display:flex;
+    align-items:center;
+    font-size:20px;
+    font-family:'Ubuntu', sans-serif;
+
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    font-family:'Ubuntu', sans-serif;
+
+}
+.nav-list li a:hover{
+    color:gray;
+    
+}
+.rightNav{
+    width:30%;
+    /*background-color: blue;*/
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding:5px;
+    font-size:17px;
+    border:2px  solid grey;
+    border-radius: 9px;
+}
+.background{
+    background:rgba(0, 0, 0, 0.7) url("../img/kl.jpg");
+    background-size:cover;
+    background-blend-mode: darken;
+
+}
+.firstSection{
+    height:100vh
+}
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin:auto;
+    height: 80%;
+}
+.firstHalf{
+    width:65%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.secondHalf{
+    width:80%;
+
+}
+.secondHalf img{
+    width:70%;
+    border: 4px solid white;
+    border-radius:150px;
+    display:block;
+    margin:auto
+
+}
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding:4px 16px;
+    margin:8px 3px;
+    border:2px solid white;
+    border-radius:8px;
+    font-size:18px;
+    background: none;
+    color:white;
+    cursor:pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:20px;
+}
+
+.btn-sm{
+    padding:6px 10px;
+    vertical-align: middle;
+    font-size:16px;
+}
+.btn-dark{
+    color:gray;
+    border:2px solid gray;
+}
+.section{
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    max-width: 100%;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding:0px 20px;
+
+}
+.sectionTag{
+    padding:16px 0;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thumbnail img{
+    width:450px;
+    border:2px solid gray;
+    border-radius: 26px;
+    margin-top:19px;
+}
+.contact{
+    background-color:rgba(3, 0, 12, 0.699);
+    height:833px;
+    
+}
+.text-center{
+    text-align: center;
+    padding-top:20px;
+    font-family:'Ubuntu', sans-serif;
+    font-size:35px;
+}
+.form{
+    max-width: 1234px;
+    margin: 25px auto;
+}
+.form input{
+    margin:20px 0;
+    width:90%;
+    font-size:19px;
+    border:2px solid gray;
+    border-radius:6px;
+    padding:5px 3px;
+    border:2px solid gray;
+    border-radius:6px;
+}
+.form-input{
+    border:2px solid gray;
+    border-radius:6px;
+    border:2px solid gray;
+    border-radius:6px;
+    max-width:1233px;
+}
+.text-footer{
+    text-align: center;
+    padding:10px 0px;
+    font-family:'Ubuntu', sans-serif;
+    display:flex;
+    justify-content:center;
+    
+}
+.burger{
+    position:absolute;
+    cursor:pointer;
+    right:5px;
+    top:20px;
+    display:none;
+}
+.line{
+    width:33px;
+    background-color: white;
+    height:4px;
+    margin:5px 3px;
+}
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transform:all 0.3s ease out;
+    }
+    .rightNav{
+        text-align:center;
+
+    }
+    #search{
+        width:100%;
+    }
+    .burger{
+        display:block;
+    }
+    .h-nav-resp{
+        height:72px
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+
+}
